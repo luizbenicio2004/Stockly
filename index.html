@@ -2,236 +2,159 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stockly - Soluções em Gestão Farmacêutica</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f4f8;
-      color: #0d47a1;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #0d47a1;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    header h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      font-style: italic;
-      margin-top: 0;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: #bbdefb;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 3rem;
-      background: white;
-      padding: 1.5rem 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(13, 71, 161, 0.15);
-      animation: fadeIn 1s ease forwards;
-    }
-    section h2 {
-      border-bottom: 3px solid #0d47a1;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-      color: #0b3c91;
-    }
-    ul {
-      list-style-type: disc;
-      margin-left: 1.5rem;
-    }
-    ul li {
-      margin-bottom: 0.7rem;
-    }
-    .socials li {
-      display: inline-block;
-      margin-right: 1.5rem;
-    }
-    .socials a {
-      color: #0d47a1;
-      font-weight: 700;
-      text-decoration: none;
-    }
-    .socials a:hover {
-      color: #1565c0;
-      text-decoration: underline;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-    }
-    form input, form textarea {
-      margin-bottom: 1rem;
-      padding: 0.75rem;
-      border: 2px solid #0d47a1;
-      border-radius: 4px;
-      font-size: 1rem;
-      resize: vertical;
-    }
-    form button {
-      background-color: #0d47a1;
-      color: white;
-      border: none;
-      padding: 0.75rem;
-      border-radius: 4px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    form button:hover {
-      background-color: #1565c0;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #0d47a1;
-      color: white;
-      font-size: 0.9rem;
-      box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
-    }
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stockly | Soluções Farmacêuticas</title>
+
+  <!-- Fonte do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Font Awesome para ícones de redes sociais -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
+  <!-- Header fixo -->
   <header>
-    <h1>Stockly</h1>
-    <p>Soluções tecnológicas para a gestão farmacêutica e saúde comunitária</p>
+    <div class="logo">Stockly</div>
     <nav>
       <a href="#quem-somos">Quem Somos</a>
       <a href="#produto">Produto</a>
-      <a href="#modelo">Modelo de Negócio</a>
+      <a href="#modelo">Modelo</a>
       <a href="#plano">Plano</a>
-      <a href="#redes-sociais">Redes Sociais</a>
-      <a href="#contato">Fale Conosco</a>
+      <a href="#redes">Redes</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <main>
-    <!-- Quem Somos -->
-    <section id="quem-somos">
+  <!-- Conteúdo principal -->
+  <main class="container">
+    
+    <section id="quem-somos" class="section fade-in delay-1">
       <h2>Quem Somos</h2>
-      <p>A <strong>Stockly</strong> é uma empresa de tecnologia focada no desenvolvimento de soluções inovadoras para a gestão eficiente de medicamentos em instituições de saúde, com destaque para farmácias solidárias e comunitárias.</p>
-      <p>Nosso objetivo é proporcionar sistemas acessíveis, seguros e fáceis de usar, que otimizem processos como controle de estoque, distribuição e atendimento, promovendo maior eficiência e transparência no setor farmacêutico.</p>
-      <p>Somos movidos pelos valores de inovação, compromisso com a qualidade, empatia, solidariedade e transparência, buscando sempre causar um impacto positivo na saúde pública e na comunidade acadêmica.</p>
-      <ul>
-        <li><strong>Missão:</strong> Prover sistemas tecnológicos que facilitem o acesso e a gestão de medicamentos para instituições e comunidades que mais necessitam.</li>
-        <li><strong>Visão:</strong> Ser referência até 2030 como empresa líder em soluções de gestão farmacêutica para iniciativas solidárias e comunitárias.</li>
-        <li><strong>Valores:</strong> Inovação, qualidade, empatia, solidariedade e transparência.</li>
-      </ul>
+      <p>A Stockly é uma startup inovadora que desenvolve soluções tecnológicas para farmácias solidárias e comunitárias. Nosso objetivo é facilitar o acesso a medicamentos e aprimorar a gestão de estoques de forma simples, segura e eficiente.</p>
+      <div class="card-group">
+        <div class="card">
+          <h3>Missão</h3>
+          <p>Proporcionar uma plataforma acessível e confiável para a gestão farmacêutica comunitária.</p>
+        </div>
+        <div class="card">
+          <h3>Visão</h3>
+          <p>Ser referência nacional em soluções tecnológicas para farmácias solidárias.</p>
+        </div>
+        <div class="card">
+          <h3>Valores</h3>
+          <p>Inovação, ética, responsabilidade social e transparência.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Produto -->
-    <section id="produto">
+    <section id="produto" class="section fade-in delay-2">
       <h2>Produto</h2>
-      <p>Nosso principal produto é o sistema <strong>Farmácia Solidária</strong>, uma plataforma web desenvolvida para gerenciar o controle de medicamentos em farmácias comunitárias e solidárias, otimizando processos e facilitando o acesso de pessoas vulneráveis a tratamentos essenciais.</p>
-      <p>O sistema oferece funcionalidades completas para:</p>
-      <ul>
-        <li>Cadastro e gestão de medicamentos e doações;</li>
-        <li>Controle eficiente do estoque, com alertas automáticos sobre validade e quantidade disponível;</li>
-        <li>Distribuição organizada e transparente dos medicamentos para beneficiários;</li>
-        <li>Emissão de relatórios detalhados para análise e tomada de decisão;</li>
-        <li>Gestão de beneficiários e integração com sistemas externos para registro de doações online;</li>
-        <li>Interface intuitiva e acessível em diversos dispositivos, garantindo usabilidade para todos os perfis de usuários.</li>
+      <ul class="list-icon">
+        <li>Cadastro detalhado de medicamentos</li>
+        <li>Controle de estoque com alertas</li>
+        <li>Distribuição organizada e transparente</li>
+        <li>Relatórios analíticos em tempo real</li>
+        <li>Gestão de doações e beneficiários</li>
       </ul>
-      <p>Essa solução foi pensada para contribuir com a saúde pública, reduzindo desperdícios e melhorando o atendimento em farmácias solidárias, especialmente em regiões com vulnerabilidade social.</p>
+      <p>Desenvolvido com React e Firebase, garantindo segurança e escalabilidade.</p>
     </section>
 
-    <!-- Modelo de Negócio -->
-    <section id="modelo">
-      <h2>Modelo de Negócio (BMC)</h2>
-      <p>Nosso modelo de negócios é estruturado para garantir sustentabilidade financeira e impacto social:</p>
-      <ul>
-        <li><strong>Segmentos de Clientes:</strong> Instituições acadêmicas, farmácias solidárias, organizações governamentais e ONGs focadas em saúde pública.</li>
-        <li><strong>Proposta de Valor:</strong> Sistema tecnológico inovador e acessível para gestão eficiente de medicamentos, promovendo transparência e solidariedade.</li>
-        <li><strong>Canais:</strong> Plataforma web, suporte direto, treinamentos presenciais e online, redes sociais e parcerias estratégicas.</li>
-        <li><strong>Relacionamento com Clientes:</strong> Suporte técnico especializado, treinamentos contínuos e canais abertos de comunicação.</li>
-        <li><strong>Fontes de Receita:</strong> Venda de licenças para instituições, prestação de serviços de customização, suporte técnico e parcerias públicas e privadas.</li>
-        <li><strong>Recursos Principais:</strong> Equipe de desenvolvimento, infraestrutura tecnológica, base de dados, conhecimento técnico em gestão farmacêutica.</li>
-        <li><strong>Atividades-Chave:</strong> Desenvolvimento contínuo da plataforma, atendimento ao cliente, capacitação e expansão do mercado.</li>
-        <li><strong>Parcerias Principais:</strong> Secretarias de saúde, universidades, ONGs, empresas de tecnologia e instituições financeiras para captação de recursos.</li>
-        <li><strong>Estrutura de Custos:</strong> Desenvolvimento, manutenção tecnológica, marketing, equipe e infraestrutura.</li>
+    <section id="modelo" class="section fade-in delay-3">
+      <h2>Modelo de Negócio</h2>
+      <ul class="list-icon">
+        <li><strong>Clientes:</strong> Farmácias solidárias, ONGs e órgãos públicos</li>
+        <li><strong>Proposta de Valor:</strong> Plataforma eficiente e acessível</li>
+        <li><strong>Canais:</strong> Plataforma web e redes sociais</li>
+        <li><strong>Relacionamento:</strong> Suporte técnico e treinamentos</li>
+        <li><strong>Receita:</strong> Licenciamento e serviços personalizados</li>
+        <li><strong>Parcerias:</strong> Universidades e secretarias de saúde</li>
       </ul>
+      <img src="img/WhatsApp Image 2025-05-28 at 19.01.31.jpeg" alt="Modelo Canvas" class="imagem" />
     </section>
 
-    <!-- Plano -->
-    <section id="plano">
-      <h2>Plano</h2>
-      <p>Para garantir o sucesso da Stockly e do produto Farmácia Solidária, nosso plano de ação inclui:</p>
-      <ul>
-        <li>Estabelecer parcerias com instituições acadêmicas e governamentais para implantação piloto;</li>
-        <li>Oferecer o sistema gratuitamente para farmácias solidárias em fase inicial, fomentando a adoção;</li>
-        <li>Captar recursos via editais públicos e fundos de inovação na área de saúde;</li>
-        <li>Desenvolver versões customizadas do sistema para diferentes perfis de clientes;</li>
-        <li>Promover campanhas de divulgação e treinamentos para capacitar usuários;</li>
-        <li>Expandir atuação para cidades da Região Metropolitana de São Paulo, iniciando por Suzano, Mogi das Cruzes e Itaquaquecetuba;</li>
-        <li>Monitorar e coletar feedback contínuo para melhoria do sistema e adaptação às necessidades do mercado.</li>
+    <section id="plano" class="section fade-in delay-4">
+      <h2>Plano Estratégico</h2>
+      <ul class="list-icon">
+        <li>Parcerias para projetos piloto</li>
+        <li>Distribuição gratuita inicial</li>
+        <li>Captação de recursos via editais</li>
+        <li>Customização conforme cliente</li>
+        <li>Treinamento de usuários</li>
+        <li>Expansão regional em São Paulo</li>
       </ul>
     </section>
 
-    <!-- Redes Sociais -->
-    <section id="redes-sociais">
+    <section id="redes" class="section fade-in delay-5">
       <h2>Redes Sociais</h2>
-      <p>Acompanhe nossas novidades, conteúdos e tire suas dúvidas nas redes sociais:</p>
+      <p>Siga a Stockly nas redes:</p>
       <ul class="socials">
-        <li><a href="https://www.facebook.com/stockly" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a href="https://www.instagram.com/stockly" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/company/stockly" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="https://twitter.com/stockly" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a href="https://instagram.com/stockly" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://linkedin.com/company/stockly" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
       </ul>
     </section>
 
-    <!-- Fale Conosco -->
-    <section id="contato">
+    <section id="contato" class="section fade-in">
       <h2>Fale Conosco</h2>
-      <p>Quer saber mais ou tem alguma dúvida? Entre em contato conosco preenchendo o formulário abaixo:</p>
-      <form onsubmit="enviarFormulario(event)">
-        <input type="text" name="nome" placeholder="Seu nome" required />
-        <input type="email" name="email" placeholder="Seu e-mail" required />
-        <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
-        <button type="submit">Enviar</button>
+      <form class="form" onsubmit="enviarFormulario(event)">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="from_name" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="from_email" required />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="message" required></textarea>
+
+        <button type="submit" class="btn-primary">Enviar</button>
+        <div class="form-feedback" id="form-feedback"></div>
       </form>
-      <p>Ou fale diretamente pelo WhatsApp:</p>
-      <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" style="color:#0d47a1; font-weight:bold;">Clique aqui para falar no WhatsApp</a>
+      <p class="whatsapp-contact">Ou fale pelo WhatsApp: 
+        <a href="https://wa.me/5511950768499" target="_blank">Clique aqui</a>
+      </p>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 Stockly | Soluções em Gestão Farmacêutica - Suzano/SP</p>
+    <p>© 2025 Stockly - Soluções em Gestão Farmacêutica | Suzano - SP</p>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
   <script>
-    function enviarFormulario(event) {
-      event.preventDefault();
-      alert('Obrigado por entrar em contato! Em breve responderemos sua mensagem.');
-      event.target.reset();
+    // Inicializa animações de fade-in
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // EmailJS: envio do formulário
+    emailjs.init("SEU_USER_ID_DO_EMAILJS");
+
+    function enviarFormulario(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector("button");
+      btn.disabled = true;
+
+      emailjs.sendForm("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", e.target)
+        .then(() => {
+          document.getElementById("form-feedback").textContent = "Mensagem enviada com sucesso!";
+          e.target.reset();
+        })
+        .catch(() => {
+          document.getElementById("form-feedback").textContent = "Erro ao enviar. Tente novamente.";
+        })
+        .finally(() => {
+          btn.disabled = false;
+        });
     }
   </script>
 </body>
